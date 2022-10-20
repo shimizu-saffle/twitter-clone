@@ -1,4 +1,6 @@
 <template>
-  <div>left sidebar</div>
+  <div>
+    <LogoTwitter />
+  </div>
 </template>
 <script setup></script>
