@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col h-screen">
+    <!--  -->
     <div
       class="p-2 my-2 hover:bg-blue-50 hover:rounded-full w-min dark:hover:bg-white/20"
       :class="defaultTransition"
@@ -9,9 +10,12 @@
           <LogoTwitter />
         </div>
       </nuxt-link>
+      <HomeIcon />
     </div>
+    <!--  -->
   </div>
 </template>
 <script setup>
+import { HomeIcon } from '@heroicons/vue/solid';
 const { defaultTransition } = useTailwindConfig();
 </script>
