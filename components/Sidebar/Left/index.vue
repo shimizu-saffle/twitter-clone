@@ -1,6 +1,5 @@
 <template>
   <div class="flex flex-col h-screen">
-    <!--  -->
     <div
       class="p-2 my-2 hover:bg-blue-50 hover:rounded-full w-min dark:hover:bg-white/20"
       :class="defaultTransition"
@@ -10,9 +9,13 @@
           <LogoTwitter />
         </div>
       </nuxt-link>
-      <HomeIcon />
     </div>
-    <!--  -->
+    <SidebarLeftTab>
+      <template v-slot:icon>
+        <HomeIcon />
+      </template>
+      <template v-slot:name> Home </template>
+    </SidebarLeftTab>
   </div>
 </template>
 <script setup>
