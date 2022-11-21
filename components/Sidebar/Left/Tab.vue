@@ -7,11 +7,18 @@
     <div class="w-6 h-6 text-dark">
       <slot name="icon"></slot>
     </div>
-    <div>
+    <div class="ml-4 tesxt-xl">
       <slot name="name"></slot>
     </div>
   </nuxt-link>
 </template>
 <script setup>
 const { defaultTransition } = useTailwindConfig();
+
+const props = defineProps({
+  active: {
+    type: Boolean,
+    default: false,
+  },
+});
 </script>
