@@ -21,4 +21,8 @@ const props = defineProps({
     default: false,
   },
 });
+
+const textClasses = computed(() =>
+  props.active ? 'font-semibold' : 'font-normal'
+);
 </script>
