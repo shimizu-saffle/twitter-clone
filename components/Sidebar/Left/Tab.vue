@@ -7,7 +7,7 @@
     <div class="w-6 h-6 text-dark">
       <slot name="icon"></slot>
     </div>
-    <div class="ml-4 tesxt-xl">
+    <div class="ml-4 text-xl" :class="textClasses">
       <slot name="name"></slot>
     </div>
   </nuxt-link>
