@@ -11,16 +11,32 @@
       </nuxt-link>
     </div>
 
-    <SidebarLeftTab active>
-      <template v-slot:icon>
-        <HomeIcon />
-      </template>
-      <template v-slot:name> Home </template>
-    </SidebarLeftTab>
+    <div class="mt-2 space-y-3">
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <HomeIcon />
+        </template>
+        <template v-slot:name> Home </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <HashtagIcon />
+        </template>
+        <template v-slot:name> Explore </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <InboxIcon />
+        </template>
+        <template v-slot:name> Bookmark </template>
+      </SidebarLeftTab>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { HomeIcon } from '@heroicons/vue/solid';
+import { HashtagIcon, HomeIcon, InboxIcon } from '@heroicons/vue/solid';
 const { defaultTransition } = useTailwindConfig();
 </script>
