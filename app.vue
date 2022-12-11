@@ -18,6 +18,11 @@
           </main>
 
           <!-- Right sidebar -->
+          <div class="hidden md:block xl:col-span-4 md:col-span-3 bg-blue-500">
+            <div class="sticky top-0">
+              <h1>Right Sidebar</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
