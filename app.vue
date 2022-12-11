@@ -17,5 +17,5 @@
   </div>
 </template>
 <script setup>
-const darkMode = ref(false);
+const darkMode = ref(true);
 </script>
