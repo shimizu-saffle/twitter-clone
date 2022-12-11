@@ -28,6 +28,13 @@
 
       <SidebarLeftTab active>
         <template v-slot:icon>
+          <BellIcon />
+        </template>
+        <template v-slot:name> Notifications </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
           <InboxIcon />
         </template>
         <template v-slot:name> Message </template>
@@ -66,6 +73,7 @@
 
 <script setup>
 import {
+  BellIcon,
   BookmarkIcon,
   DocumentTextIcon,
   DotsCircleHorizontalIcon,
