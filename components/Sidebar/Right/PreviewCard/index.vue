@@ -1,10 +1,10 @@
 <template>
   <div
-    class="m-2 overflow-hidden border rounded-2xl bg-gray-50 dark:bg-dim-700"
+    class="m-2 overflow-hidden border rounded-2xl bg-gray-50 dark:bg-dim-700 dark:text-white"
     :class="twittersBorderColor"
   >
     <h1
-      class="p-3 text-xl font-extrabold text-gray-900 border-b dart:text-white"
+      class="p-3 text-xl font-extrabold text-gray-900 border-b dark:text-white"
     >
       {{ props.title }}
     </h1>
