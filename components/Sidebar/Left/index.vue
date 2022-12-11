@@ -30,13 +30,49 @@
         <template v-slot:icon>
           <InboxIcon />
         </template>
+        <template v-slot:name> Message </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <BookmarkIcon />
+        </template>
         <template v-slot:name> Bookmark </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <DocumentTextIcon />
+        </template>
+        <template v-slot:name> Lists </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <UserIcon />
+        </template>
+        <template v-slot:name> Profile </template>
+      </SidebarLeftTab>
+
+      <SidebarLeftTab active>
+        <template v-slot:icon>
+          <DotsCircleHorizontalIcon />
+        </template>
+        <template v-slot:name> More </template>
       </SidebarLeftTab>
     </div>
   </div>
 </template>
 
 <script setup>
-import { HashtagIcon, HomeIcon, InboxIcon } from '@heroicons/vue/solid';
+import {
+  BookmarkIcon,
+  DocumentTextIcon,
+  DotsCircleHorizontalIcon,
+  HashtagIcon,
+  HomeIcon,
+  InboxIcon,
+  UserIcon,
+} from '@heroicons/vue/solid';
 const { defaultTransition } = useTailwindConfig();
 </script>
