@@ -72,15 +72,16 @@
 </template>
 
 <script setup>
+import { HomeIcon } from '@heroicons/vue/solid';
+
 import {
   BellIcon,
   BookmarkIcon,
   DocumentTextIcon,
   DotsCircleHorizontalIcon,
   HashtagIcon,
-  HomeIcon,
   InboxIcon,
   UserIcon,
-} from '@heroicons/vue/solid';
+} from '@heroicons/vue/outline';
 const { defaultTransition } = useTailwindConfig();
 </script>
