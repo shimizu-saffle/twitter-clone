@@ -11,14 +11,17 @@
 
     <slot> </slot>
 
-    <div class="p-3 text-sm text-blue-400 cursor-pointer hover:bg-gray-100">
+    <div
+      class="p-3 text-sm text-blue-400 cursor-pointer hover:bg-gray-100"
+      :class="defaultTransition"
+    >
       Show more
     </div>
   </div>
 </template>
 
 <script setup>
-const { twittersBorderColor } = useTailwindConfig();
+const { twittersBorderColor, defaultTransition } = useTailwindConfig();
 
 const props = defineProps({
   title: {
