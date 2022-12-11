@@ -10,6 +10,7 @@
         </div>
       </nuxt-link>
     </div>
+
     <SidebarLeftTab active>
       <template v-slot:icon>
         <HomeIcon />
@@ -18,6 +19,7 @@
     </SidebarLeftTab>
   </div>
 </template>
+
 <script setup>
 import { HomeIcon } from '@heroicons/vue/solid';
 const { defaultTransition } = useTailwindConfig();
