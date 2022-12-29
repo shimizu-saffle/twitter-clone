@@ -9,7 +9,7 @@
     </div>
     <div>
       <div v-if="loading">
-        <span> Loading </span>
+        <UISpinner />
       </div>
       <div v-else>
         <slot> </slot>
