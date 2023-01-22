@@ -14,16 +14,16 @@
 </template>
 
 <script setup>
-const { defaultTransition } = useTailwindConfig();
+const { defaultTransition } = useTailwindConfig()
 
 const props = defineProps({
   active: {
     type: Boolean,
     default: false,
   },
-});
+})
 
 const textClasses = computed(() =>
   props.active ? 'font-semibold' : 'font-normal'
-);
+)
 </script>

@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-const { twittersBorderColor } = useTailwindConfig();
+const { twittersBorderColor } = useTailwindConfig()
 
 const props = defineProps({
   title: {
@@ -34,5 +34,5 @@ const props = defineProps({
     type: Boolean,
     required: true,
   },
-});
+})
 </script>

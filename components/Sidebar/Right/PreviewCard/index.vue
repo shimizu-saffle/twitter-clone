@@ -22,12 +22,12 @@
 </template>
 
 <script setup>
-const { twittersBorderColor, defaultTransition } = useTailwindConfig();
+const { twittersBorderColor, defaultTransition } = useTailwindConfig()
 
 const props = defineProps({
   title: {
     type: String,
     required: true,
   },
-});
+})
 </script>

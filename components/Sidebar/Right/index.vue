@@ -53,7 +53,7 @@ const whatsHappeningItems = ref([
   { title: 'SpaceX', count: '18.8k Tweets' },
   { title: '#CodingIsFun', count: '8.8k Tweets' },
   { title: '#artforall', count: '18.8k Tweets' },
-]);
+])
 
 const whoToFollowItems = ref([
   {
@@ -71,5 +71,5 @@ const whoToFollowItems = ref([
     handle: '@JoeBiden',
     image: 'https://picsum.photos/200/200',
   },
-]);
+])
 </script>

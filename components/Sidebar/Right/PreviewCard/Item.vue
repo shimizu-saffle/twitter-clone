@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
-const { defaultTransition, twittersBorderColor } = useTailwindConfig();
+const { defaultTransition, twittersBorderColor } = useTailwindConfig()
 const wrapperClasses = computed(
   () => `${defaultTransition} ${twittersBorderColor}`
-);
+)
 </script>
