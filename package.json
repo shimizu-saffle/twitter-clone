@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^5.3.3",
+    "@types/bcrypt": "^5.0.0",
     "nuxt": "3.0.0-rc.11",
     "prisma": "^4.8.0"
   },
